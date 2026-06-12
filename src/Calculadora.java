@@ -27,6 +27,17 @@ public class Calculadora
        return num1 / num2;
    }
 
+   //metodo mayor
+    public void esMayor(int num1, int num2)
+    {
+
+    }
+
+    //metodo numero primo
+    public void primo(int num1)
+    {
+
+    }
    //psvm
    static void main()
    {
