@@ -30,8 +30,20 @@ public class Calculadora
    //metodo mayor
     public void esMayor(int num1, int num2)
     {
-
+        if (num1 == num2)
+        {
+            JOptionPane.showMessageDialog(null,"Los numeros son iguales");
+        }
+        else if(num1 > num2)
+        {
+            JOptionPane.showMessageDialog(null,"Num1 es el mayor");
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Num2 es el mayor");
+        }
     }
+
 
     //metodo numero primo
     public void primo(int num1)
@@ -48,9 +60,13 @@ public class Calculadora
        //se muestra el resultado por consola
        System.out.println("El resultado de la suma es: "+calculadora.sumar(num1,num2));
        //Se muestra el resultado por pantalla
+       /*
        JOptionPane.showMessageDialog(null,"El resultado de la suma es: "+calculadora.sumar(num1,num2));
        JOptionPane.showMessageDialog(null,"El resultado de la resta es: "+calculadora.restar(num1,num2));
        JOptionPane.showMessageDialog(null,"El resultado de la multiplicacion es: "+calculadora.multiplicar(num1,num2));
        JOptionPane.showMessageDialog(null,"El resultado de la division es: "+calculadora.dividir(num1,num2));
+
+        */
+       calculadora.esMayor(num1,num2);
    }
 }
