@@ -1,7 +1,20 @@
-public class Triangulo
-{
-     /*
-    Desarrolle un metodo que determine si un triangulo es equilatero, es decir, si sus lados son iguales.
-    escaleno, es decir, si sus lados son diferentes o rectangulo si dos lados son iguales.
-     */
+import javax.swing.*;
+
+public class Triangulo {
+
+    //metodo lados iguales
+    public void ladosiguales(int L1, int L2, int L3) {
+        if (L1 == L2 && L2 == L3) {
+            JOptionPane.showMessageDialog(null, "los lados son iguales, es equilatero");
+
+        }
+    }
+
+    //metodo lados diferentes
+    public void ladosdiferentes(int L1, int L2, int L3) {
+        if (L1 != L2 && L2 != L3 && L1 != L3) {
+            JOptionPane.showMessageDialog(null, "los lado son diferentes, es escaleno");
+
+        }
+    }
 }
